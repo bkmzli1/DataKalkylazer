@@ -161,7 +161,7 @@ public class GUI extends JFrame {
                 int year = dataMinus(year1, year2);//разница в годе
                 int month = dataMinus(month1, month2);//разница в месяце
                 int day = dataMinus(day1, day2);//разница в днях
-                Date date = new Date(year - 1900, month - 1, day);//для удобства Data всё сама сконфигурирует
+                Date date = new Date(year - 1900, month--, day);//для удобства Data всё сама сконфигурирует отчёт года начинается не с нуля а месяц с 0
                 System.out.println(formatForDateNow.format(date));
                 Jlabe.setText(formatForDateNow.format(date));//вывод ответа
             }
