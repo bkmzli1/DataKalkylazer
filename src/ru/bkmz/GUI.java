@@ -29,8 +29,6 @@ public class GUI extends JFrame {
      *
      * @noinspection ALL
      */
-    //код генерирует IDEA
-    //нужен для createUIComponents
     private void $$$setupUI$$$() {
         createUIComponents();
         JPanel = new JPanel();
@@ -40,7 +38,7 @@ public class GUI extends JFrame {
         JPanel.putClientProperty("html.disable", Boolean.TRUE);
         button = new JButton();
         button.setForeground(new Color(-16731205));
-        button.setText("Button");
+        button.setText("Рассчитать разницу в дате");
         button.putClientProperty("html.disable", Boolean.TRUE);
         JPanel.add(button, new com.intellij.uiDesigner.core.GridConstraints(6, 1, 1, 3, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         Jlabe = new JLabel();
@@ -166,6 +164,7 @@ public class GUI extends JFrame {
                 Jlabe.setText(formatForDateNow.format(date));//вывод ответа
             }
         }
+
         //JSpinner имеет формат Object поэтому мы его изменяем в int и вычетам их
         int dataMinus(JSpinner jSpinner1, JSpinner jSpinner2) {
             int data1 = Integer.parseInt(String.valueOf(jSpinner1.getValue()));
